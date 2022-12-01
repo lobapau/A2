@@ -25,6 +25,6 @@ cin>>n;
 cout<<"La suma es: "<<suma<<endl;
 	
 	system("pause");
-	/*Finaliza la ejecución de una función y devuelve el control a la función de llamada (o al sistema operativo si se transfiere el control de la función main ). La ejecución se reanuda en la función de llamada, en el punto que sigue inmediatamente a la llamada*/
+	/*Finaliza la ejecución de una función y devuelve el control a la función de llamada (o al sistema operativo si se transfiere el control de la función main). La ejecución se reanuda en la función de llamada, en el punto que sigue inmediatamente a la llamada*/
 return 0;
 }
