@@ -3,15 +3,21 @@
     #include <iostream.h>
     #include <stdlib.h>
 #else
-    #include <iostream>
+    /*pone a su disposición los objetos cin, cout en el ámbito estándar (std), de tal manera que usted puede comenzar a enviar o recibir información a través de los mismos sin siquiera preocuparse de su creación.*/
+#include <iostream>
     #include <cstdlib>
-    using namespace std;
+    /*sirve para dar acceso al espacio de nombres (namespace) std, donde se encuentra encerrada toda la librería estándar*/
+using namespace std;
 #endif
 
+/*El tipo int es el tipo entero básico predeterminado. Puede representar todos los números enteros en un intervalo específico de la implementación*/
+/*sirve como punto de partida para la ejecución del programa. Normalmente, controla la ejecución del programa dirigiendo las llamadas a otras funciones del programa*/
 int main (void)
 {
-    float IMC, altura_en_m, peso_en_kg;
-    cout << "Ingresa el valor de altura en m: ";
+    /*Para definir datos reales se antepone la palabra reservada float al identificador de la variable*/
+float IMC, altura_en_m, peso_en_kg;
+   /*cout nos ayude imprimir por pantalla todos lo que vamos a escribir dentro de las comillas e ingresaremos */
+ cout << "Ingresa el valor de altura en m: ";
     cin >> altura_en_m;
     cin.get();
     //Calcular IMC
@@ -35,9 +41,12 @@ int main (void)
         cout << "Obesidad (obesidad de grado III)." << endl;
     if(IMC>=40)
         cout << "Obesidad (obesidad de grado IV)." << endl;
-    cout << "Valor de IMC: " << IMC << endl;
-    cout << endl;
+    //Muestro resultados por pantalla
+cout << "Valor de IMC: " << IMC << endl;
+    //Muestro resultados por pantalla
+cout << endl;
     system ("pause");
-    return EXIT_SUCCESS;
+    /*Finaliza la ejecución de una función y devuelve el control a la función de llamada (o al sistema operativo si se transfiere el control de la función main ). La ejecución se reanuda en la función de llamada, en el punto que sigue inmediatamente a la llamada*/
+return EXIT_SUCCESS;
 }
 
